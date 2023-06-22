@@ -1,0 +1,37 @@
+// Colors
+$clr-light-red-hsl: 0, 100%, 67%;
+$clr-orangey-yellow-hsl: 39, 100%, 56%;
+$clr-green-teal-hsl: 166, 100%, 37%;
+$clr-cobalt-blue-hsl: 234, 85%, 45%;
+$clr-light-slate-blue: hsl(252, 100%, 67%);
+$clr-light-royal-blue: hsl(241, 81%, 54%);
+$clr-violet-blue: hsla(256, 72%, 40%, 1);
+$clr-persian-blue: hsl(241, 72%, 46%);
+$clr-persian-blue-dark: hsl(224, 30%, 27%);
+$clr-black: #000;
+$clr-white: #fff;
+$clr-grey: #777;
+
+// Gradients
+$gradient-primary: linear-gradient(
+  $clr-light-slate-blue,
+  $clr-light-royal-blue 80%
+);
+$gradient-secondary: linear-gradient(
+  $clr-violet-blue,
+  rgba($clr-persian-blue, 0.2) 70%
+);
+
+// Font Family
+$ff-primary: "Hanken Grotesk", sans-serif;
+
+// Fonts
+$fs-1: 1.8rem;
+$fs-2: 2.125rem;
+$fs-3: 2.55rem;
+$fs-4: 5.75rem;
+
+// Font Weight
+$fw-regular: 500;
+$fw-bold: 700;
+$fw-ex-bold: 800;

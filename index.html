@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Results summary component</title>
+
+    <!-- link stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="results-summary">
+        <div class="results-summary__container results flex-flow">
+          <h2 class="results__title primary-title">Your Results</h2>
+
+          <div class="results__score">
+            <span class="results__score--value">76</span>
+            of 100
+          </div>
+
+          <div class="results-rank">
+            <h3 class="results-rank__title">Great</h3>
+            <p class="results-rank__description">
+              Your scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </div>
+        </div>
+
+        <div class="results-summary__container summary flex-flow">
+          <h2 class="summary__title primary-title">Summary</h2>
+          <div class="summary__items flex-flow">
+            <div class="summary-item summary-item--1">
+              <div class="summary-item__header flex-flow">
+                <svg class="summary-item__icon">
+                  <use
+                    xlink:href="assets/images/icon-reaction.svg#icon-reaction"
+                  ></use>
+                </svg>
+                <h3 class="summary-item__title secondary-title">Reaction</h3>
+              </div>
+              <p class="summary-item__score">
+                <span class="summary-item__score--value">80</span> / 100
+              </p>
+            </div>
+
+            <div class="summary-item summary-item--2">
+              <div class="summary-item__header flex-flow">
+                <svg class="summary-item__icon">
+                  <use
+                    xlink:href="assets/images/icon-memory.svg#icon-memory"
+                  ></use>
+                </svg>
+                <h3 class="summary-item__title secondary-title">Memory</h3>
+              </div>
+              <p class="summary-item__score">
+                <span class="summary-item__score--value">92</span> / 100
+              </p>
+            </div>
+
+            <div class="summary-item summary-item--3">
+              <div class="summary-item__header flex-flow">
+                <svg class="summary-item__icon">
+                  <use
+                    xlink:href="assets/images/icon-verbal.svg#icon-verbal"
+                  ></use>
+                </svg>
+                <h3 class="summary-item__title secondary-title">Verbal</h3>
+              </div>
+              <p class="summary-item__score">
+                <span class="summary-item__score--value">61</span> / 100
+              </p>
+            </div>
+
+            <div class="summary-item summary-item--4">
+              <div class="summary-item__header flex-flow">
+                <svg class="summary-item__icon">
+                  <use
+                    xlink:href="assets/images/icon-visual.svg#icon-visual"
+                  ></use>
+                </svg>
+                <h3 class="summary-item__title secondary-title">Visual</h3>
+              </div>
+              <p class="summary-item__score">
+                <span class="summary-item__score--value">72</span> / 100
+              </p>
+            </div>
+          </div>
+
+          <button class="btn btn--primary">Continue</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

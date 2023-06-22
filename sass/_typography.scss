@@ -1,0 +1,31 @@
+@use "./variables" as *;
+
+.primary-title {
+  font-size: $fs-2;
+  font-weight: $fw-ex-bold;
+}
+
+.flex-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
+}
+
+.btn {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0.7em 1.4em;
+  display: inline-block;
+  border-radius: 10rem;
+
+  &--primary {
+    color: $clr-white;
+    background-color: $clr-persian-blue-dark;
+
+    &:hover {
+      background-image: $gradient-primary;
+    }
+  }
+}

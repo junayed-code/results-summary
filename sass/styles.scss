@@ -1,0 +1,122 @@
+@use "./variables" as *;
+@forward "./fonts";
+@forward "./base";
+@forward "./typography";
+
+.results-summary {
+  max-width: 65rem;
+
+  &__container {
+    padding: 2.75rem;
+    border-radius: 0 0 2.5rem 2.5rem;
+    justify-content: space-between;
+  }
+}
+
+.results {
+  text-align: center;
+  align-items: center;
+  color: rgba($clr-white, 0.7);
+  background-image: $gradient-primary;
+
+  &__score {
+    width: 16.35rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-image: $gradient-secondary;
+    display: grid;
+    place-content: center;
+
+    &--value {
+      color: $clr-white;
+      font-size: $fs-4;
+      line-height: 1.25;
+      font-weight: $fw-ex-bold;
+    }
+  }
+}
+
+.results-rank__title {
+  font-size: $fs-3;
+  color: $clr-white;
+  margin-bottom: 1rem;
+}
+
+.summary {
+  &__items {
+    gap: 1.5rem;
+  }
+
+  &__title {
+    color: rgba($clr-black, 0.7);
+  }
+}
+
+.summary-item {
+  padding: 1.15rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  background-color: hsla(var(--item-color), 0.07);
+
+  &__title {
+    font-size: $fs-1;
+    color: hsl(var(--item-color));
+  }
+
+  &__score {
+    color: $clr-grey;
+
+    &--value {
+      color: rgba($clr-black, 0.7);
+      font-weight: $fw-bold;
+    }
+  }
+
+  &__header {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.25rem;
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  &--1 {
+    --item-color: #{$clr-light-red-hsl};
+  }
+
+  &--2 {
+    --item-color: #{$clr-orangey-yellow-hsl};
+  }
+
+  &--3 {
+    --item-color: #{$clr-green-teal-hsl};
+  }
+
+  &--4 {
+    --item-color: #{$clr-cobalt-blue-hsl};
+  }
+}
+
+@media screen and (min-width: 38em) {
+  main {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+  }
+
+  .results-summary {
+    display: flex;
+    border-radius: 2.5rem;
+    box-shadow: 0.5rem 0.5rem 3rem -1.5rem rgba($clr-persian-blue, 0.2);
+
+    &__container {
+      flex: 1;
+      border-radius: 2.5rem;
+      padding: 3.5rem;
+    }
+  }
+}
