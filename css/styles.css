@@ -45,6 +45,17 @@ body {
   gap: 2.75rem;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  padding: 0;
+  margin: -1px;
+}
+
 .btn {
   font: inherit;
   cursor: pointer;
@@ -59,10 +70,7 @@ body {
   background-color: hsl(224, 30%, 27%);
 }
 .btn--primary:hover {
-  background-image: linear-gradient(
-    hsl(252, 100%, 67%),
-    hsl(241, 81%, 54%) 80%
-  );
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%) 80%);
 }
 
 .results-summary {
@@ -78,19 +86,13 @@ body {
   text-align: center;
   align-items: center;
   color: rgba(255, 255, 255, 0.7);
-  background-image: linear-gradient(
-    hsl(252, 100%, 67%),
-    hsl(241, 81%, 54%) 80%
-  );
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%) 80%);
 }
 .results__score {
   width: 16.35rem;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  background-image: linear-gradient(
-    hsl(256, 72%, 40%),
-    rgba(36, 33, 202, 0.2) 70%
-  );
+  background-image: linear-gradient(hsl(256, 72%, 40%), rgba(36, 33, 202, 0.2) 70%);
   display: grid;
   place-content: center;
 }
@@ -170,4 +172,4 @@ body {
     border-radius: 2.5rem;
     padding: 3.5rem;
   }
-}
+}/*# sourceMappingURL=styles.css.map */
